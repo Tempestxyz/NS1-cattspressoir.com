@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('fond connexion.jpeg');
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.5); /* Fond blanc avec 80% d'opacité */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo-noir.png" alt="Mini Logo" style="width: 100px; height: 100px;">
+        <p>"Le succès n'est que l'autorisation de continuer"</p>
+        <form id="loginForm">
+            <label for="uname"><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="uname" id="uname" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrer le mot de passe" name="psw" id="psw" required>
+
+            <button type="submit">Connexion</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById('uname').value;
+            var password = document.getElementById('psw').value;
+
+            if(username === 'CCP-SVT.888' && password === 'CCP-SVT.888') {
+                // Redirige l'utilisateur vers la page d'accueil
+                window.location.href = 'accueil.html';
+            } else {
+                // Affiche un message d'erreur
+                alert('Nom d\'utilisateur ou mot de passe incorrect.');
+            }
+        });
+    </script>
+</body>
+</html>

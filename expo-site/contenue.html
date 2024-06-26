@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenu</title>
+    
+    <style>
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #077736;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header a img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1.sujet {
+            color: #0f4e2a;
+        }
+        h2 {
+            color: #0f4e2a;
+            border-bottom: 2px solid #0f4e2a;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #0f4e2a;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        footer {
+            background-color: #077736;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style pour le bouton de remontée */
+        #btnRemonter {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: #163a5e;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #btnRemonter:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://cattspressoir.haitisolution.net/sge/login">
+            <img src="logo-noir.png" alt="Logo" class="logo" style="width: 170px; height: 60px;">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="http://www.cattspressoir.org/">CCP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section>
+        <h1 class="sujet">Les Séismes : Manifestations du Jeu des Plaques Tectoniques</h1>
+        <p>Pour comprendre ce qu'est une plaque tectonique, il est essentiel de connaître la structure interne de la Terre, composée de trois couches principales :</p>
+        <ul>
+            <li><strong>Le Noyau :</strong> au centre, formé de fer et de nickel.</li>
+            <li><strong>Le Manteau :</strong> intermédiaire, constitué de roches silicatées.</li>
+            <li><strong>La Croûte :</strong> extérieure, divisée en croûte continentale et océanique.</li>
+        </ul>
+        <p>Dans le manteau, un phénomène appelé mouvement de convection transfère la chaleur générée par la désintégration radioactive qui se fait dans le noyau et le manteau inférieur. Cette chaleur remonte, provoquant des courants convectifs dans l'asthénosphère (la partie supérieure du manteau).</p>
+        <p>Ces courants de convection rendent le manteau ductile et déformable, permettant à la croûte rigide de flotter dessus, ce qui provoque la cassure de la croûte terrestre en plusieurs morceaux, appelés plaques tectoniques.</p>
+        <p>Les plaques tectoniques bougent et il existe trois types de mouvement :</p>
+        <ul>
+            <li><strong>Mouvement de divergence :</strong> Les plaques s'éloignent les unes des autres, créant des failles et formant de nouvelles croûtes océaniques aux dorsales médio-océaniques.</li>
+            <li><strong>Mouvement de convergence :</strong> Les plaques se dirigent l'une vers l'autre. Par exemple, la collision de la plaque indienne avec la plaque eurasienne forme l'Himalaya, causant des montagnes, des séismes et une activité volcanique.</li>
+            <li><strong>Mouvement de subduction :</strong> Une plaque océanique plonge sous une plaque continentale ou une autre plaque océanique, comme la faille de San Andreas en
+        </ul>
+        <p>Les plaques tectoniques se déplacent à des vitesses variées, généralement de l'ordre de quelques centimètres par an.</p>
+        <h2>Chapitre 1 : La Tectonique des Plaques</h2>
+        <h3>1.1 Les Plaques Tectoniques</h3>
+        <p>La surface de la Terre est divisée en une douzaine de plaques tectoniques majeures et plusieurs plaques mineures. Ces plaques, constituées de lithosphère rigide, se déplacent lentement sur l'asthénosphère, une couche de roches partiellement fondues et plus ductiles. Les interactions entre ces plaques sont à l'origine de nombreux phénomènes géologiques.</p>
+        <h3>1.2 Types de Mouvements des Plaques</h3>
+        <p>Les plaques tectoniques interagissent principalement de trois manières :</p>
+        <ul>
+            <li><strong>Divergence :</strong> Les plaques s'éloignent les unes des autres, formant de nouvelles croûtes océaniques aux dorsales médio-océaniques.</li>
+            <li><strong>Convergence :</strong> Les plaques se rapprochent, ce qui peut entraîner la subduction d'une plaque sous une autre ou la formation de montagnes.</li>
+            <li><strong>Coulissage :</strong> Les plaques glissent horizontalement l'une contre l'autre le long des failles transformantes.</li>
+        </ul>
+
+<h2>Chapitre 2 : Mécanismes des Séismes</h2>
+
+<h3>2.1 Formation des Séismes</h3>
+<p>Les séismes sont causés par la libération soudaine d'énergie accumulée par le mouvement des plaques tectoniques. Cette énergie se libère sous forme d'ondes sismiques qui se propagent à travers la Terre.</p>
+
+<h3>2.2 Les Failles</h3>
+<p>Les failles sont des fractures dans la croûte terrestre où se produit le déplacement des blocs de roche. Il existe plusieurs types de failles, chacune associée à un type de mouvement tectonique :</p>
+<ul>
+<li><strong>Failles normales :</strong> Associées aux zones de divergence où la croûte s'étire.</li>
+<li><strong>Failles inverses :</strong> Associées aux zones de convergence où la croûte est compressée.</li>
+<li><strong>Failles décrochantes :</strong> Associées aux zones de transformation où les plaques glissent horizontalement.</li>
+</ul>
+
+<h2>Chapitre 3 : Mesure et Enregistrement des Séismes</h3>
+
+<h3>3.1 Magnitude et Intensité</h3>
+<p>La magnitude mesure l'énergie libérée par un séisme, souvent quantifiée par l'échelle de Richter ou l'échelle de magnitude de moment (Mw). L'intensité mesure les effets du séisme en un lieu donné, souvent évaluée par l'échelle de Mercalli.</p>
+
+<h3>3.2 Sismographes</h3>
+<p>Les sismographes sont des instruments qui enregistrent les mouvements du sol. Ils détectent les ondes sismiques et permettent de déterminer l'emplacement, la magnitude et les caractéristiques d'un séisme.</p>
+
+<h2>Chapitre 4 : Régions Sismiquement Actives</h2>
+
+<h3>4.1 La Ceinture de Feu du Pacifique</h3>
+<p>La Ceinture de Feu du Pacifique est la région sismique la plus active au monde, bordant l'océan Pacifique. Elle est caractérisée par une intense activité volcanique et sismique due aux nombreuses zones de subduction.</p>
+
+<h3>4.2 Autres Régions Actives</h3>
+<p>D'autres régions sismiquement actives incluent la région méditerranéenne, la ceinture alpine, et certaines parties de l'Asie, comme l'Himalaya, où des séismes dévastateurs se produisent régulièrement.</p>
+
+<h2>Chapitre 5 : Prévention et Préparation</h2>
+
+<h3>5.1 Ingénierie Parasismique</h3>
+<p>La conception et la construction de bâtiments résistants aux séismes sont essentielles pour minimiser les pertes humaines et matérielles. Les techniques incluent l'utilisation de matériaux flexibles, la base isolée et les amortisseurs de vibrations.</p>
+
+<h3>5.2 Systèmes d'Alerte Précoce</h3>
+<p>Les systèmes d'alerte précoce détectent les ondes sismiques initiales et peuvent fournir quelques secondes à quelques minutes de préavis avant les secousses destructrices, permettant d'évacuer les zones à risque.</p>
+
+<h3>5.3 Éducation et Préparation</h3>
+<p>La sensibilisation du public et la préparation aux séismes sont cruciales. Des exercices d'évacuation, la formation aux premiers secours et la connaissance des mesures de sécurité peuvent sauver des vies.</p>
+
+<h2>Conclusion</h2>
+<p>Les séismes sont des phénomènes naturels inévitables, mais leur impact peut être considérablement réduit par la compréhension des mécanismes tectoniques, la construction de bâtiments résistants et la préparation des populations. Alors que notre connaissance des séismes et de la tectonique des plaques s'améliore, nous pouvons mieux anticiper et gérer les risques sismiques, protégeant ainsi des millions de vies dans les régions vulnérables, tel qu'Haïti.</p>
+</section>
+
+<section>
+<h2>Les 12 Grandes Plaques Tectoniques</h2>
+<ul>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="pacifique.png" alt="Plaque Pacifique">
+            <a href="pacifique.html">Plaque Pacifique</a>
+        </div>
+        <div class="grid-item">
+            <img src="eurasienne.png" alt="Plaque Eurasienne">
+            <a href="eurasienne.html">Plaque Eurasienne</a>
+        </div>
+        <div class="grid-item">
+            <img src="nord-americaine.png" alt="Plaque Nord-Américaine">
+            <a href="nord_amerique.html">Plaque Nord-Américaine</a>
+        </div>
+        <div class="grid-item">
+            <img src="sud-americaine.png" alt="Plaque Sud-Américaine">
+            <a href="sud_amerique.html">Plaque Sud-Américaine</a>
+        </div>
+        <div class="grid-item">
+            <img src="africaine.png" alt="Plaque Africaine">
+            <a href="africaine.html">Plaque Africaine</a>
+        </div>
+        <div class="grid-item">
+            <img src="antartique.png" alt="Plaque Antarctique">
+            <a href="antarctique.html">Plaque Antarctique</a>
+        </div>
+        <div class="grid-item">
+            <img src="australienne.png" alt="Plaque Indo-Australienne">
+            <a href="indo_australienne.html">Plaque Indo-Australienne</a>
+        </div>
+        <div class="grid-item">
+            <img src="Nazca.png" alt="Plaque de Nazca">
+            <a href="nazca.html">Plaque de Nazca</a>
+        </div>
+        <div class="grid-item">
+            <img src="cocos.png" alt="Plaque de Cocos">
+            <a href="cocos.html">Plaque de Cocos</a>
+        </div>
+        <div class="grid-item">
+            <img src="caraibes.png" alt="Plaque Caraïbes">
+            <a href="caraibes.html">Plaque Caraïbes</a>
+        </div>
+        <div class="grid-item">
+            <img src="arabique.png" alt="Plaque Arabique">
+            <a href="arabique.html">Plaque Arabique</a>
+        </div>
+        <div class="grid-item">
+            <img src="philipines.png" alt="Plaque des Philippines">
+            <a href="philippines.html">Plaque des Philippines</a>
+        </div>
+    </div>
+</ul>
+ 
+</section>
+</main>
+
+<footer class="footer">
+    © 2024 <a href="Conditions generales d'utilisation.html">Conditions générales d'utilisation.</a>
+</footer>
+
+<button id="btnRemonter" title="Remonter en haut de page">↑</button>
+
+<script>
+    // Afficher ou cacher le bouton de remontée
+    window.onscroll = function() {
+        var btn = document.getElementById("btnRemonter");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Fonction pour remonter en haut de page
+    document.getElementById('btnRemonter').onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+</body>
+</html>
